@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities</title>
+    <!-- js files -->
+    <script src="js/cities.js"></script>
+</head>
+    <body>
+        <select name="ciudad">
+            <script>
+                cities.forEach(city =>{
+                    document.write("<option>" + city.code + " | " + city.name + "</option>")
+                });
+            </script>
+            <option selected>Selecionar ciudad..</option>
+        </select>
+    </body>
+</html>
